@@ -1,86 +1,200 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portofolio personal Aulia Pratama, web developer dan creative problem solver." />
-    <title>Aulia Pratama — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="noise"></div>
-    <header class="nav container">
-      <a class="brand" href="#beranda" aria-label="Kembali ke beranda">AP<span>.</span></a>
-      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">Menu</button>
-      <nav aria-label="Navigasi utama">
-        <a href="#tentang">Tentang</a>
-        <a href="#karya">Karya</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agenda, pekerjaan, dan dokumentasi kegiatan." />
+  <title>Agenda & Dokumentasi Kegiatan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;5..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
 
-    <main>
-      <section id="beranda" class="hero container">
-        <p class="eyebrow reveal">✦ AVAILABLE FOR FREELANCE — 2026</p>
-        <h1 class="reveal">Mendesain pengalaman digital yang <em>berkesan.</em></h1>
-        <div class="hero-bottom reveal">
-          <p>Saya Aulia, seorang web developer dan desainer yang mengubah ide menjadi produk digital yang jelas, cepat, dan manusiawi.</p>
-          <a class="circle-link" href="#karya">Lihat karya <span>↓</span></a>
+  <header class="nav container">
+    <a class="brand" href="#beranda">CATATAN<span>.</span></a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">Menu</button>
+    <nav aria-label="Navigasi utama">
+      <a href="#agenda">Agenda</a>
+      <a href="#selesai">Selesai</a>
+      <a href="#proses">Proses</a>
+      <a href="#dokumentasi">Dokumentasi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero container">
+      <p class="eyebrow reveal">✦ CATATAN KEGIATAN — 2026</p>
+      <h1 class="reveal">Agenda, pekerjaan, dan <em>dokumentasi.</em></h1>
+      <div class="hero-bottom reveal">
+        <p>
+          Ruang untuk mencatat kunjungan, pekerjaan yang sudah selesai,
+          hal-hal yang sedang dikerjakan, serta dokumentasi kegiatan.
+        </p>
+        <a class="circle-link" href="#agenda">Lihat agenda <span>↓</span></a>
+      </div>
+      <div class="orbit" aria-hidden="true"><span>AGENDA • KERJA • DOKUMENTASI •</span></div>
+    </section>
+
+    <section id="agenda" class="section container">
+      <p class="section-tag">01 / AGENDA KUNJUNGAN</p>
+      <div class="section-heading">
+        <h2>Kegiatan yang akan datang.</h2>
+        <p>Perbarui daftar ini setiap kali ada jadwal baru.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="date"><strong>15</strong><span>SEP 2026</span></div>
+          <div class="timeline-content">
+            <span class="label">KUNJUNGAN</span>
+            <h3>Nama lokasi / kegiatan</h3>
+            <p>Isi dengan tujuan kunjungan, siapa yang ditemui, atau agenda utama.</p>
+            <span class="location">📍 Nama tempat</span>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="date"><strong>18</strong><span>SEP 2026</span></div>
+          <div class="timeline-content">
+            <span class="label">RAPAT</span>
+            <h3>Nama rapat / koordinasi</h3>
+            <p>Tambahkan keterangan singkat mengenai agenda.</p>
+            <span class="location">📍 Nama tempat</span>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="date"><strong>22</strong><span>SEP 2026</span></div>
+          <div class="timeline-content">
+            <span class="label">MONITORING</span>
+            <h3>Nama kegiatan berikutnya</h3>
+            <p>Tambahkan informasi yang perlu diketahui sebelum kegiatan.</p>
+            <span class="location">📍 Nama tempat</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="selesai" class="work section">
+      <div class="container">
+        <p class="section-tag">02 / SUDAH DIKERJAKAN</p>
+        <div class="section-heading">
+          <h2>Yang sudah selesai.</h2>
+          <p>Catatan singkat pekerjaan dan hasil yang telah dicapai.</p>
         </div>
-        <div class="orbit" aria-hidden="true"><span>CREATIVE • DEVELOPER • DESIGNER •</span></div>
-      </section>
 
-      <section id="tentang" class="about container section">
-        <p class="section-tag">01 / TENTANG SAYA</p>
-        <div class="about-grid">
-          <h2>Saya percaya desain terbaik berawal dari rasa ingin tahu.</h2>
-          <div>
-            <p>Berbasis di Indonesia, saya senang bekerja di persimpangan antara strategi, visual, dan teknologi. Fokus saya adalah membangun identitas dan situs yang bukan hanya terlihat bagus, tetapi juga terasa tepat.</p>
-            <div class="skills">
-              <span>UI / UX Design</span><span>Web Development</span><span>Brand Identity</span><span>Creative Direction</span>
+        <div class="work-list">
+          <article class="work-item reveal">
+            <span class="work-number">01</span>
+            <div>
+              <span class="status done">SELESAI</span>
+              <h3>Nama pekerjaan / program</h3>
+              <p>10 September 2026 · Tulis ringkasan hasil pekerjaan di sini.</p>
             </div>
-          </div>
+            <span class="arrow">↗</span>
+          </article>
+
+          <article class="work-item reveal">
+            <span class="work-number">02</span>
+            <div>
+              <span class="status done">SELESAI</span>
+              <h3>Nama pekerjaan / kegiatan</h3>
+              <p>08 September 2026 · Tulis hasil atau catatan penting.</p>
+            </div>
+            <span class="arrow">↗</span>
+          </article>
+
+          <article class="work-item reveal">
+            <span class="work-number">03</span>
+            <div>
+              <span class="status done">SELESAI</span>
+              <h3>Nama pekerjaan / kegiatan</h3>
+              <p>01 September 2026 · Tulis hasil atau catatan penting.</p>
+            </div>
+            <span class="arrow">↗</span>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="karya" class="work section">
-        <div class="container">
-          <p class="section-tag">02 / PILIHAN KARYA</p>
-          <div class="work-list">
-            <article class="project reveal">
-              <div class="project-number">01</div>
-              <div class="project-visual coral"><span>nara</span></div>
-              <div class="project-info"><h3>Nara Studio</h3><p>Branding · Website</p></div>
-              <a href="#kontak" class="arrow" aria-label="Lihat Nara Studio">↗</a>
-            </article>
-            <article class="project reveal">
-              <div class="project-number">02</div>
-              <div class="project-visual blue"><span>GRID<br/>FORM</span></div>
-              <div class="project-info"><h3>Gridform</h3><p>Digital Product · UI/UX</p></div>
-              <a href="#kontak" class="arrow" aria-label="Lihat Gridform">↗</a>
-            </article>
-            <article class="project reveal">
-              <div class="project-number">03</div>
-              <div class="project-visual lime"><span>mori<br/>house</span></div>
-              <div class="project-info"><h3>Mori House</h3><p>Art Direction · E-commerce</p></div>
-              <a href="#kontak" class="arrow" aria-label="Lihat Mori House">↗</a>
-            </article>
-          </div>
+    <section id="proses" class="section container">
+      <p class="section-tag">03 / SEDANG DIKERJAKAN</p>
+      <div class="section-heading">
+        <h2>Yang masih berjalan.</h2>
+        <p>Gunakan bagian ini untuk menunjukkan perkembangan pekerjaan.</p>
+      </div>
+
+      <div class="progress-grid">
+        <article class="progress-card reveal">
+          <div class="card-top"><span>PROGRAM 01</span><strong>60%</strong></div>
+          <h3>Nama pekerjaan / program</h3>
+          <p>Jelaskan secara singkat apa yang sedang dikerjakan dan langkah berikutnya.</p>
+          <div class="progress"><span style="width:60%"></span></div>
+        </article>
+
+        <article class="progress-card reveal">
+          <div class="card-top"><span>PROGRAM 02</span><strong>35%</strong></div>
+          <h3>Nama pekerjaan / kegiatan</h3>
+          <p>Jelaskan perkembangan saat ini dan target berikutnya.</p>
+          <div class="progress"><span style="width:35%"></span></div>
+        </article>
+
+        <article class="progress-card reveal">
+          <div class="card-top"><span>PROGRAM 03</span><strong>80%</strong></div>
+          <h3>Nama pekerjaan / kegiatan</h3>
+          <p>Jelaskan bagian yang sudah selesai dan yang masih tersisa.</p>
+          <div class="progress"><span style="width:80%"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="dokumentasi" class="gallery-section section">
+      <div class="container">
+        <p class="section-tag">04 / DOKUMENTASI</p>
+        <div class="section-heading">
+          <h2>Foto dan cerita di balik kegiatan.</h2>
+          <p>Klik foto untuk melihatnya lebih besar. Ganti file di folder <code>images</code> dengan foto kamu.</p>
         </div>
-      </section>
 
-      <section id="kontak" class="contact container section">
-        <p class="section-tag">03 / MARI BEKERJA SAMA</p>
-        <h2>Punya ide yang ingin diwujudkan?</h2>
-        <a class="email" href="mailto:halo@auliapratama.com">halo@auliapratama.com <span>↗</span></a>
-        <div class="socials"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Behance</a></div>
-      </section>
-    </main>
+        <div class="gallery">
+          <figure class="photo-card tall reveal">
+            <img src="images/foto-01.svg" alt="Dokumentasi kunjungan pertama" />
+            <figcaption><strong>Kunjungan ke lokasi</strong><span>12 September 2026 · Nama tempat</span><p>Caption singkat tentang kegiatan dalam foto.</p></figcaption>
+          </figure>
 
-    <footer class="container"><span>© 2026 Aulia Pratama</span><span>Dibuat dengan perhatian pada detail.</span></footer>
-    <script src="script.js"></script>
-  </body>
+          <figure class="photo-card reveal">
+            <img src="images/foto-02.svg" alt="Dokumentasi kegiatan kedua" />
+            <figcaption><strong>Koordinasi kegiatan</strong><span>10 September 2026 · Nama tempat</span><p>Caption singkat tentang kegiatan dalam foto.</p></figcaption>
+          </figure>
+
+          <figure class="photo-card reveal">
+            <img src="images/foto-03.svg" alt="Dokumentasi kegiatan ketiga" />
+            <figcaption><strong>Aktivitas di lapangan</strong><span>08 September 2026 · Nama tempat</span><p>Caption singkat tentang kegiatan dalam foto.</p></figcaption>
+          </figure>
+
+          <figure class="photo-card wide reveal">
+            <img src="images/foto-04.svg" alt="Dokumentasi kegiatan keempat" />
+            <figcaption><strong>Catatan dari lapangan</strong><span>05 September 2026 · Nama tempat</span><p>Caption singkat tentang kegiatan dalam foto.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span>© 2026 · Catatan Kegiatan</span>
+    <span>Diperbarui secara berkala.</span>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Tutup foto">×</button>
+    <img src="" alt="" />
+    <p></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
